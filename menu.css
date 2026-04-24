@@ -1,0 +1,56 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Navbar list styling */
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+/* Navbar links styling */
+.navbar li {
+    margin: 0 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+/* Menu icon styling */
+#menu-icon {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar on small screens */
+    }
+    
+    #menu-icon {
+        display: block; /* Show menu icon */
+    }
+}
